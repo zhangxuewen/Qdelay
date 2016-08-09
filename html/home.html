@@ -6,20 +6,7 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<link rel="stylesheet" href="../css/lib/mui.min.css">
-		<style type="text/css">
-			.y_gotoUser{
-				width: .9rem;
-				height: .9rem;
-				position: fixed;
-				bottom: .5rem;
-				left: .38rem;
-				z-index: 100;
-			}
-			.y_gotoUser img{
-				width: 100%;
-				height: 100%;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="../css/y_home.css"/>
 		<title></title>
 	</head>
 	<body>
@@ -27,35 +14,86 @@
 		<div class="y_gotoUser">
 			<img src="../img/y_go.png"/>
 		</div>
-		<script src="../lib/mui.min.js" type="text/javascript" charset="utf-8"></script>
-		
-		<script src="../lib/jquery.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			$('.y_gotoUser').click(function(){
-				console.log("跳转")
-			})
+		<div class="backMain">
+			x
+		</div>
+		<div class="y_blackView">
+			<div class="y_blackView_top">
+				<div class="y_blackView_top_search">
+					搜索
+				</div>
+				
+				<ul>
+					<li>
+						<div class="y_blackView_top_btn_img">
+							
+						</div>
+						<div class="y_blackView_top_btn_title">
+							设置
+						</div>
+					</li>
+					<li>
+						<div class="y_blackView_top_btn_img">
+							
+						</div>
+						<div class="y_blackView_top_btn_title">
+							夜间
+						</div>
+					</li>
+					<li>
+						<div class="y_blackView_top_btn_img">
+							
+						</div>
+						<div class="y_blackView_top_btn_title">
+							离线
+						</div>
+					</li>
+					<li>
+						<div class="y_blackView_top_btn_img">
+							
+						</div>
+						<div class="y_blackView_top_btn_title">
+							推荐
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="y_blackView_bottom">
+				<ul>
+					<li>
+						<span class="y_blackView_bottom_icon" style="background-image: url(../img/y_mian_left_03.png);"></span>
+						<span class="y_blackView_bottom_title">关于我们</span>
+					</li>
+					<li>
+						<span class="y_blackView_bottom_icon" style="background-image: url(../img/y_mian_left_06.png);"></span>
+						<span class="y_blackView_bottom_title">新闻分类 ></span>
+					</li>
+					<li>
+						<span class="y_blackView_bottom_icon" style="background-image: url(../img/y_mian_left_08.png);"></span>
+						<span class="y_blackView_bottom_title">栏目中心</span>
+					</li>
+					<li>
+						<span class="y_blackView_bottom_icon" style="background-image: url(../img/y_mian_left_10.png);"></span>
+						<span class="y_blackView_bottom_title">好奇心研究所</span>
+					</li>
+					<li>
+						<span class="y_blackView_bottom_icon" style="background-image: url(../img/y_mian_left_12.png);"></span>
+						<span class="y_blackView_bottom_title">我的消息</span>
+					</li>
+					<li>
+						<span class="y_blackView_bottom_icon" style="background-image: url(../img/y_mian_left_14.png);"></span>
+						<span class="y_blackView_bottom_title">个人中心</span>
+					</li>
+					<li>
+						<span class="y_blackView_bottom_icon" style="background-image: url(../img/y_mian_left_16.png);"></span>
+						<span class="y_blackView_bottom_title">首页</span>
+					</li>
+				</ul>
+			</div>
 			
-			function a(){
-				$('.y_gotoUser').css("display","none")
-			}
-			function b(){
-				$('.y_gotoUser').css("display","block")
-			}
-		</script>
-		
-		<script type="text/javascript">
-			mui.init({
-			gestureConfig:{
-				doubletap:true
-			},
-			subpages:[{
-				url:'y_htmlSub.html',
-				id:'y_htmlSub.html',
-				styles:{
-					
-				}
-			}]
-		});
-		</script>
+		</div>
+		<script src="../lib/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/y_home.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>
