@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/lib/mui.min.css">
+		<style type="text/css">
+			.y_gotoUser{
+				width: .9rem;
+				height: .9rem;
+				position: fixed;
+				bottom: .5rem;
+				left: .38rem;
+				z-index: 100;
+			}
+			.y_gotoUser img{
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+		<title></title>
+	</head>
+	<body>
+		<script src="../lib/yzxRem.js" type="text/javascript" charset="utf-8"></script>
+		<div class="y_gotoUser">
+			<img src="../img/y_go.png"/>
+		</div>
+		<script src="../lib/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="../lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.y_gotoUser').click(function(){
+				console.log("跳转")
+			})
+			
+			function a(){
+				$('.y_gotoUser').css("display","none")
+			}
+			function b(){
+				$('.y_gotoUser').css("display","block")
+			}
+		</script>
+		
+		<script type="text/javascript">
+			mui.init({
+			gestureConfig:{
+				doubletap:true
+			},
+			subpages:[{
+				url:'y_htmlSub.html',
+				id:'y_htmlSub.html',
+				styles:{
+					
+				}
+			}]
+		});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="../lib/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/angular.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/lib/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/y_homeSub.css"/>
+		<link rel="stylesheet" href="../css/lib/mui.min.css">
+	</head>
+
+	<body ng-app="y_app" ng-controller="y_Ctrl">
+		<!--下拉刷新容器-->
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--数据列表-->
+				<ul class="mui-table-view mui-table-view-chevron">
+					<li class="mui-table-view-cell y-lunbo">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<a href="#" class="swiper-slide"  ng-repeat="item in lunbo">
+									<img ng-src="{{item.img}}" />
+									<p>{{item.title}}</p>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</li>
+					
+					<li class="mui-table-view-cell" ng-repeat="item in article">
+						<!--文章1结构-->
+						<div class="y_main_article1" ng-if="item.type==1">
+							<div class="y_main_article1_left">
+								<p class="y_main_article1_left_title">{{item.post.title}}</p>
+								<ul class="y_main_article1_left_des">
+									<li>{{item.post.category.title}}</li>
+									<li>
+										<img src="../img/y_main_03.png"/>
+										<span>{{item.post.comment_count}}</span>
+									</li>
+									<li>
+										<img src="../img/y_main_05.png"/>
+										<span>{{item.post.praise_count}}</span>
+									</li>
+								</ul>
+								<div class="y_main_article1_left_time">
+									{{date(item.post.publish_time)}}
+								</div>
+							</div>
+							<div class="y_main_article1_right">
+								<img class="y_main_article1_right_img" ng-src="{{item.image}}"/>
+							</div>
+						</div>
+						
+						<!--文章2结构-->
+						
+						<div class="y_main_article2" ng-if="item.type==2">
+							<div class="y_main_article2_top">
+								<img class="y_main_article1_right_img" ng-src="{{item.image}}"/>
+							</div>
+							<div class="y_main_article2_bottom">
+								<p class="y_main_article2_bottom_title">{{item.post.title}}</p>
+								<p class="y_main_article2_bottom_descript">{{item.post.description}}</p>
+								<ul class="y_main_article2_bottom_des">
+									<li>{{item.post.category.title}}</li>
+									<li>
+										<img src="../img/y_main_03.png"/>
+										<span>{{item.post.comment_count}}</span>
+									</li>
+									<li>
+										<img src="../img/y_main_05.png"/>
+										<span>{{item.post.praise_count}}</span>
+									</li>
+									<li>
+										{{date(item.post.publish_time)}}
+									</li>
+								</ul>
+								
+							</div>
+							
+						</div>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="../lib/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/y_homeSub.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var a=1;
+			$('.mui-scroll').scroll(function(){
+				parent.a();
+				a=2;
+			})
+			var time=setInterval(function(){
+				if (a==1) {
+					parent.b();
+				}
+				a=1;
+			},100)
+			
+			
+		</script>
+		<script src="../lib/yzxRem.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
