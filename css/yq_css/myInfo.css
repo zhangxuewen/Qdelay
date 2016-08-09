@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+}
+#myInfo{
+	width: 100%;
+}
+#myInfo #header{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#myInfo #header .btn{
+	font-size: .28rem;
+	width: 2.05rem;
+	height: .72rem;
+	border-bottom: .08rem solid white;
+	line-height: .72rem;
+	text-align: center;
+	color: #999;
+	font-weight: bold;
+	transition: border-color 1s; 
+}
+
+#myInfo #liu{
+	height: .8rem;
+	width: 100%;
+	
+}
+#myInfo #sec{
+	width: 100%;
+	height: 12rem;
+	overflow: hidden;
+	background-color: #eee;
+	position: relative;
+}
+#myInfo #sec .box1{
+	width: 300%;
+
+	display: flex;
+	font-size: .28rem;
+	color: #ccc;
+	position: absolute;#
+	left: 0;
+	top: 0;
+	transition: left 1s;
+}
+#myInfo #sec .box1>div{
+	width: 33.3333%;
+	height: 12rem;
+
+	
+}
+/*#myInfo #sec .box1>div:nth-child(1){
+	background-color: #007AFF;
+}
+#myInfo #sec .box1>div:nth-child(2){
+	background-color: #ff7000;
+}
+#myInfo #sec .box1>div:nth-child(3){
+	background-color: #00ff00;
+}*/
+#myInfo #sec .box1>div>div{
+	height: 1.3rem;
+	display: flex;
+	padding: 0 .4rem;
+	background-color: white;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+}
+#myInfo #sec .box1>div>div span{
+	color: #000000;
+	font-weight: bold;
+}
+#myInfo #sec .box1>div>div div:nth-child(1){
+	display: flex;
+	align-items: center;
+}
+#myInfo #sec .box1>div>div div:nth-child(1) span:nth-child(1){
+	display: block;
+	width: .66rem;
+	height: .66rem;
+	background-color: #F6C918;
+	border-radius: .33rem;
+	margin-right: .2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#myInfo #sec .box1>div>div div:nth-child(1) span:nth-child(1) img{
+	width: .43rem;
+	
+	
+}
+#myInfo #sec .box1>div>.sec-main{
+	padding: 0;
+	width: 3rem;
+	height: 3rem;
+	background-color: #D0D0D0;
+	border-radius: 1.5rem;
+	margin: 2rem auto 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+#myInfo #sec .box1>div>.sec-main img{ 
+	width: 1.42rem;
+	height: 2.1rem;
+}
+#myInfo #sec .box1>div>p{
+	padding: 0;
+	font-size: .28rem;
+	margin: .5rem auto 0;	
+	text-align: center;
+} 
