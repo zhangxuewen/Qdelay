@@ -1,3 +1,10 @@
+
+$(function(){
+	setTimeout(function(){
+		$('.y_blackView').css("display","block");
+	},500)
+})
+
 //弹出
 $('.y_gotoUser').click(function() {
 	$('.y_gotoUser').animate({
