@@ -2,8 +2,105 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title></title>
+		<link rel="stylesheet" href="css/lib/swiper.min.css">
+		<link rel="stylesheet" href="css/lh.css">
+		<script src="lib/yzxRem.js"></script>
+		<script src="lib/swiper.min.js"></script>
+		<script src="lib/jquery.js"></script>
 	</head>
 	<body>
+		<section class="loading">
+			<div class="swiper-container" id="load-page">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide load-slide">
+						<img src="img/loading1.jpg" alt="" class="bgimg1">
+						<div class="logo-img"><img src="img/logo.png" alt=""></div>
+						<div class="title-text">
+							<p>好奇心</p>
+							<p>是人类最美好的品质</p>
+						</div>
+					</div>
+					<div class="swiper-slide load-slide">
+						<img src="img/loading2.jpg" alt="" class="bgimg2">
+						<div class="logo-img"><img src="img/logo.png" alt=""></div>
+						<div class="curiosity curiosity-move">
+							<img src="img/llogo4.png" alt="">好奇心研究所
+						</div>
+						<div class="design">
+							<img src="img/llogo5.jpg" alt="">设 计
+						</div>
+						<div class="film">
+							<img src="img/llogo3.png" alt="">电影工厂
+						</div>
+						<div class="fashion">
+							<img src="img/llogo8.png" alt="">时 尚
+						</div>
+						<div class="logo-text">
+							<p>有 人 颠 覆 世 界</p>
+							<p>我们在记录</p>
+						</div>
+					</div>
+					<div class="swiper-slide load-slide">
+						<img src="img/loading3.jpg" alt="" class="bgimg3">
+						<div class="ribao1">
+							<div><img src="img/ribao.jpg" alt="">好奇心日报<span>3分钟前</span></div>
+							<p>苹果能做好iphone,为什么总做不好互联网服务...</p>
+						</div>
+						<div class="ribao2">
+							<div><img src="img/ribao.jpg" alt="">好奇心日报<span>5分钟前</span></div>
+							<p>Mike回复了您的评论</p>
+						</div>
+						<div class="enter-btn">马上开启</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+		<script>
+			$(".enter-btn").on("click",function (e) {
+				$(".loading").fadeOut(600);
+			})
+			var loadSwiper=new Swiper("#load-page",{
+				pagination : '.swiper-pagination',
+//				effect : 'fade',
+//				fade: {
+//					crossFade: true
+//				},
+				onSlideChangeEnd: function(swiper){
+      				if(loadSwiper.translate==-loadSwiper.width*2) {
+						$(".enter-btn").css("opacity", "1");
+						$(".ribao1").css("left","1.9rem");
+						$(".ribao2").css("left","1.9rem");
+					}else {
+						$(".enter-btn").css("opacity", "0");
+						$(".ribao1").css("left","-4rem");
+						$(".ribao2").css("left","-4rem");
+					}
+					if (loadSwiper.translate==-loadSwiper.width){
+						$(".curiosity").css("top","1.2rem");
+						$(".design").css("top","3.8rem");
+						$(".film").css("top","3.5rem");
+						$(".fashion").css("top","5.8rem");
+					}else{
+						$(".curiosity").css("top","-1rem");
+						$(".design").css("top","-1rem");
+						$(".film").css("top","-1rem");
+						$(".fashion").css("top","-1rem");
+					}
+					if (loadSwiper.translate==0){
+						$(".title-text").css("opacity","1");
+					}else {
+						$(".title-text").css("opacity","0");
+					}
+
+    			},
+				
+
+			})
+
+
+		</script>
 	</body>
 </html>
