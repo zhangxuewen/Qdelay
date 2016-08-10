@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/tt/c12.css" />
+		<script src="../lib/angular.js"></script>
+		<script src="../tt_js/controller.js"></script>
+	</head>
+
+	<body ng-controller="myCtrl-lanmu">
+		<div class="box12">
+			<div class="main">
+				<div class="top">
+					<div class="title">
+						<h2>我关注的所有内容</h2>
+					</div>
+					<div class="radiu">!</div>
+					<div class="btm">
+						<p>一个栏目都没有怎么满足你的好奇心</p>
+						<p>试试从下面列表中添加关注呗！</p>
+					</div>
+				</div>
+			</div>
+			<!--全部内容-->
+			<div class="allContentbox">
+				<div class="allContent">
+					<div class="title">
+						<h2>全部内容</h2>
+					</div>
+					<!--循环创建a-->
+					<a href="http://m.qdaily.com/mobile/special_columns/{{x.id}}.html" ng-repeat="x in data.columns">
+						<div class="a-top">
+							<img ng-src={{x.image}} />
+							<p>{{x.name}}</p>
+							<div class="radiu">＋</div>
+
+						</div>
+						<div class="a-bottom">
+							<h4><img src="../img/582A2E0A9F1785175E307B372C37425F_03.png"/>{{x.content_provider}}</h4>
+							<p>{{x.subscriber_num}}人已订阅，更新至{{x.post_count}}篇</p>
+						</div>
+					</a>
+
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../lib/yzxRem.js"></script>
+
+</html>
