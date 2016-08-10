@@ -1,39 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		
 		<title>大公司头条</title>
 		<link rel="stylesheet" type="text/css" href="../css/tt/c2.css"/>
+		<script src="../lib/angular.js"></script>
+		<script src="../tt_js/controller.js"></script>	
 	</head>
-	<body>
-		<div class="box2">
-			<div class="list">
+	<body ng-controller="myCtrl-toutiao">
+		<div class="box9"ng-repeat="x in data.feeds">
+			<div class="list" ng-if="x.type==1">
+				<a href="http://www.qdaily.com/articles/{{x.post.id}}.html">
+				
 				<div class="listBox">
 					<div class="right">
 						<div>
-							<h3>眼镜店为什么只卖眼镜，让人逛一逛感觉会更舒服</h3>
-							<p>设计 <img src="../img/Screenshot_2016.qdaily_03.png" /> <span>6</span> <img src="../img/Screenshot_2016.qdaily_05.png" /> <span>29</span> 2小时前</p>
+							<h3>{{x.post.title}}</h3>
+							<p>设计 <img src="../img/Screenshot_2016.qdaily_03.png" /> <span>{{x.post.comment_count}}</span> <img src="../img/Screenshot_2016.qdaily_05.png" /> <span>{{x.post.praise_count}}</span> 2小时前</p>
 						</div>
 					</div>
 					<div class="left">
-						<img src="../img/Screenshot_2016-08-09-09-35--613_com.qdaily_03.png" />
+						<img ng-src="{{x.image}}" />
 					</div>
 				</div>
-				<!--2-->
-				<div class="listBox">
-					<div class="right">
-						<div>
-							<h3>眼镜店为什么只卖眼镜，让人逛一逛感觉会更舒服</h3>
-							<p>设计 <img src="../img/Screenshot_2016.qdaily_03.png" /> <span>6</span> <img src="../img/Screenshot_2016.qdaily_05.png" /> <span>29</span> 2小时前</p>
-						</div>
-					</div>
-					<div class="left">
-						<img src="../img/Screenshot_2016-08-09-09-35--613_com.qdaily_03.png" />
-					</div>
-				</div>	
+				</a>
 			</div>
+			<ul ng-if="x.type==2">
+				<a href="http://www.qdaily.com/articles/{{x.post.id}}.html">
+				<li>
+					<div class="images">
+						<img ng-src="{{x.image}}" />
+					</div>
+					<div class="text">
+						<h3>{{x.post.title}}</h3>
+						<p>{{x.post.description}}</p>
+						<p>商业 <img src="../img/Screenshot_2016.qdaily_03.png" /> <span>{{x.post.comment_count}}</span> <img src="../img/Screenshot_2016.qdaily_05.png" /> <span>{{x.post.praise_count}}</span> 2小时前</p>
+					</div>
+				</li>
+				</a>
+			</ul>
+<!--------------------------->
+			
+			
+			
 		</div>
 	</body>
 	

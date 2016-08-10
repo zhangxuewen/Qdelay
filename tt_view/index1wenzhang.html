@@ -12,8 +12,10 @@
 
 	<body ng-controller="myCtrl">
 		<div class="box1">
+			
 			<ul>
 				<li ng-repeat="x in data.feeds">
+					<a href="http://www.qdaily.com/articles/{{x.post.id}}.html">
 					<div class="images">
 						<img ng-src={{x.image}}/>
 					</div>
@@ -22,6 +24,7 @@
 						<p>{{x.post.description}}</p>
 						<p>{{x.post.category.title}} <img src="../img/Screenshot_2016.qdaily_03.png" /><span>{{x.post.comment_count}}</span> <img src="../img/Screenshot_2016.qdaily_05.png" /><span>{{x.post.praise_count}}</span> 2小时前</p>
 					</div>
+					</a>
 				</li>
 				
 			</ul>

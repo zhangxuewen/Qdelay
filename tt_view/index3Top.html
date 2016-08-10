@@ -12,39 +12,42 @@
 	</head>
 
 	<body ng-controller="myCtrl-Top">
-		<div class="box3">
-			<div class="box3-2" ng-repeat="x in data.feeds">
-				<ul>
-					<li>
-						<div class="images">
-							<img ng-src={{x.image}} />
-						</div>
-						<div class="text">
+		<div class="box2"ng-repeat="x in data.feeds">
+			<div class="list" ng-if="x.type==1">
+				<a href="http://www.qdaily.com/articles/{{x.post.id}}.html">
+				
+				<div class="listBox">
+					<div class="right">
+						<div>
 							<h3>{{x.post.title}}</h3>
-							<p>{{x.post.description}}</p>
-							<p>{{x.post.category.title}} <img src="../img/Screenshot_2016.qdaily_03.png"/> <span>{{x.post.comment_count}}</span> <img src="../img/Screenshot_2016.qdaily_05.png" /> <span>{{x.post.praise_count}}</span> 2小时前</p>
-						</div>
-					</li>
-				</ul>
-
-				<div class="list">
-					<div class="listBox" ng-repeat="x in data.feeds">
-						<div class="right">
-							<div>
-								<h3>眼镜店为什么只卖眼镜，让人逛一逛感觉会更舒服</h3>
-								<p>{{x.post.category.title}} <img src="../img/Screenshot_2016.qdaily_03.png" /> <span>6</span> <img src="../img/Screenshot_2016.qdaily_05.png" /> <span>29</span> 2小时前</p>
-							</div>
-						</div>
-						<div class="left">
-							<img ng-src={{x.image}} />
+							<p>设计 <img src="../img/Screenshot_2016.qdaily_03.png" /> <span>{{x.post.comment_count}}</span> <img src="../img/Screenshot_2016.qdaily_05.png" /> <span>{{x.post.praise_count}}</span> 2小时前</p>
 						</div>
 					</div>
-					<!---->
+					<div class="left">
+						<img ng-src="{{x.image}}" />
+					</div>
 				</div>
+				</a>
 			</div>
-
+			<ul ng-if="x.type==2">
+				<a href="http://www.qdaily.com/articles/{{x.post.id}}.html">
+				<li>
+					<div class="images">
+						<img ng-src="{{x.image}}" />
+					</div>
+					<div class="text">
+						<h3>{{x.post.title}}</h3>
+						<p>{{x.post.description}}</p>
+						<p>商业 <img src="../img/Screenshot_2016.qdaily_03.png" /> <span>{{x.post.comment_count}}</span> <img src="../img/Screenshot_2016.qdaily_05.png" /> <span>{{x.post.praise_count}}</span> 2小时前</p>
+					</div>
+				</li>
+				</a>
+			</ul>
+<!--------------------------->
+			
+			
+			
 		</div>
-		<!----------------->
 
 	</body>
 	<script src="../lib/yzxRem.js"></script>

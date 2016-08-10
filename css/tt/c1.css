@@ -5,6 +5,10 @@ html,body{
 	width:7.2rem;
 	background: #efefef;
 }
+a{
+	color: black;
+	text-decoration: none;
+}
 .box1{
 	width:100%;
 }

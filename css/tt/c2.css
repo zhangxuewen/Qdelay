@@ -11,6 +11,10 @@ li{
 	background: #F7FCF6;
 	margin-bottom: 0.1rem;
 }
+a{
+	color: black;
+	text-decoration: none;
+}
 .images{
 	width:100%;
 }
