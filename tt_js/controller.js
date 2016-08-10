@@ -55,4 +55,9 @@ app.controller("myCtrl-amusemen",function($scope,$http){
 	$http.get("../tt_data/amusemen.json").success(function(res){
 		$scope.data = res.data;
 	})
+});
+app.controller("myCtrl-lanmu",function($scope,$http){
+	$http.get("../tt_data/lanmu.json").success(function(res){
+		$scope.data = res.data;
+	})
 })
