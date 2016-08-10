@@ -1,3 +1,8 @@
+function pushView(str){
+	location.href="http://m.qdaily.com/mobile/articles/"+str+".html"
+}
+
+
 
 $(function(){
 	setTimeout(function(){

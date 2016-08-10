@@ -33,9 +33,9 @@
 						<div class="swiper-pagination"></div>
 					</li>
 					
-					<li class="mui-table-view-cell" ng-repeat="item in article">
+					<li class="mui-table-view-cell" ng-repeat="item in article" data-ids={{item.post.id}}  >
 						<!--文章1结构-->
-						<div class="y_main_article1" ng-if="item.type==1">
+						<div class="y_main_article1" ng-if="item.type==1" >
 							<div class="y_main_article1_left">
 								<p class="y_main_article1_left_title">{{item.post.title}}</p>
 								<ul class="y_main_article1_left_des">
@@ -60,7 +60,7 @@
 						
 						<!--文章2结构-->
 						
-						<div class="y_main_article2" ng-if="item.type==2">
+						<div class="y_main_article2" ng-if="item.type==2" >
 							<div class="y_main_article2_top">
 								<img class="y_main_article1_right_img" ng-src="{{item.image}}"/>
 							</div>
