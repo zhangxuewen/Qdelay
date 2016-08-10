@@ -29,17 +29,17 @@ $('.backMain').click(function() {
 	$('.y_blackView_top').css("top","-10%");
 	$('.y_blackView_bottom').css("top","5.3rem");
 })
-$('.y_blackView').click(function(){
-	$('.backMain').animate({
-		"bottom": "-.9rem"
-	}, 100);
-	$('.y_gotoUser').animate({
-		"bottom": ".5rem"
-	}, 100);
-	$('.y_blackView').css("position", "static");
-	$('.y_blackView_top').css("top","-10%");
-	$('.y_blackView_bottom').css("top","5.3rem");
-})
+//$('.y_blackView').click(function(){
+//	$('.backMain').animate({
+//		"bottom": "-.9rem"
+//	}, 100);
+//	$('.y_gotoUser').animate({
+//		"bottom": ".5rem"
+//	}, 100);
+//	$('.y_blackView').css("position", "static");
+//	$('.y_blackView_top').css("top","-10%");
+//	$('.y_blackView_bottom').css("top","5.3rem");
+//})
 
 
 //首页q隐藏
@@ -70,4 +70,24 @@ $('.y_userCount').click(function(){
 })
 $('.y_message').click(function(){
 	location.href="../yq_xinxi/myInfo.html"
+})
+$('.y_news').click(function(){
+	$('.y_blackView_bottom').css('left','-100%');
+	$('.y_blackView_bottom_right').css('left','.6rem');
+	$('.backback').animate({
+		"bottom": ".5rem"
+	}, 100);
+	$('.backMain').animate({
+		"bottom": "-.9rem"
+	}, 100);
+})
+$('.backback').click(function(){
+	$('.y_blackView_bottom').css('left','0');
+	$('.y_blackView_bottom_right').css('left','10rem');
+	$('.backback').animate({
+		"bottom": "-.9rem"
+	}, 100);
+	$('.backMain').animate({
+		"bottom": ".5rem"
+	}, 100);
 })
