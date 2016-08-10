@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<title>设计</title>
+		<script src="../lib/angular.js"></script>
+		<script src="../tt_js/controller.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/tt/c2.css" />
+	</head>
+
+	<body ng-controller="myCtrl-devise">
+		<div class="box2">
+			<div class="box2-2" ng-repeat="x in data.feeds">
+				<ul>
+					<li>
+						<div class="images">
+							<img ng-src={{x.image}} />
+						</div>
+						<div class="text">
+							<h3>{{x.post.title}}</h3>
+							<p>{{x.post.description}}</p>
+							<p>{{x.post.category.title}} <img src="../img/Screenshot_2016.qdaily_03.png"/> <span>{{x.post.comment_count}}</span> <img src="../img/Screenshot_2016.qdaily_05.png" /> <span>{{x.post.praise_count}}</span> 2小时前</p>
+						</div>
+					</li>
+				</ul>
+
+				<div class="list">
+					<div class="listBox" ng-repeat="x in data.feeds">
+						<div class="right">
+							<div>
+								<h3>眼镜店为什么只卖眼镜，让人逛一逛感觉会更舒服</h3>
+								<p>{{x.post.category.title}} <img src="../img/Screenshot_2016.qdaily_03.png" /> <span>6</span> <img src="../img/Screenshot_2016.qdaily_05.png" /> <span>29</span> 2小时前</p>
+							</div>
+						</div>
+						<div class="left">
+							<img ng-src={{x.image}} />
+						</div>
+					</div>
+					<!---->
+
+				</div>
+			</div>
+		</div>
+		<!----------------->
+
+	</body>
+	<script src="../lib/yzxRem.js"></script>
+</html>
