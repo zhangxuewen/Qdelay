@@ -14,6 +14,16 @@ app.controller("myCtrl-devise",function($scope,$http){
 		$scope.data = res.data;
 	})
 });
+app.controller("myCtrl-Top",function($scope,$http){
+	$http.get("../tt_data/data4.json").success(function(res){
+		$scope.data = res.data;
+	})
+});
+app.controller("myCtrl-fashion",function($scope,$http){
+	$http.get("../tt_data/data4.json").success(function(res){
+		$scope.data = res.data;
+	})
+});
 app.controller("myCtrl-tenPic",function($scope,$http){
 	$http.get("../tt_data/shigetu/tu1.json").success(function(res){
 		$scope.data = res.data;
