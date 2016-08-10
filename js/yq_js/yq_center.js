@@ -71,3 +71,6 @@ $('#myCenter .btn').each(function(index, elem) {
 		$('#myCenter .box1').css("left",-7.2*index+"rem")
 	})
 })
+$("#myCenter #header>div:eq(0)").bind("touchstart",function(){
+	window.history.back();
+})
