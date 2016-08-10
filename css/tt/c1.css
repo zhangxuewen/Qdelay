@@ -1,0 +1,43 @@
+*{
+	margin:0;padding:0;
+}
+html,body{
+	width:7.2rem;
+	background: #efefef;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+.box1{
+	width:100%;
+}
+.box1 li{
+	width:100%;
+	background: #F7FCF6;
+	margin-bottom: 0.1rem;
+}
+.box1 .images{
+	width:100%;
+}
+.box1 .images img{
+	width:100%;
+}
+.box1 .text{
+	width:90%;
+	margin:0 auto;
+	padding-bottom: 0.3rem;
+	
+}
+.box1 h3{
+	font-size: 0.28rem;
+}
+.box1 p{
+	font-size: 0.26rem;
+	padding-top:0.1rem;
+	color:#787a77;
+}
+.box1 .text img{
+	width:0.34rem;
+	vertical-align:middle;
+}

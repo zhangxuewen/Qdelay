@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>长文章</title>
+		<script src="../lib/angular.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/tt/c1.css" />
+		<script src="../tt_js/controller.js"></script>
+	</head>
+
+	<body ng-controller="myCtrl">
+		<div class="box1">
+			
+			<ul>
+				<li ng-repeat="x in data.feeds">
+					<a href="http://www.qdaily.com/articles/{{x.post.id}}.html">
+					<div class="images">
+						<img ng-src={{x.image}}/>
+					</div>
+					<div class="text">
+						<h3>{{x.post.title}}</h3>
+						<p>{{x.post.description}}</p>
+						<p>{{x.post.category.title}} <img src="../img/Screenshot_2016.qdaily_03.png" /><span>{{x.post.comment_count}}</span> <img src="../img/Screenshot_2016.qdaily_05.png" /><span>{{x.post.praise_count}}</span> 2小时前</p>
+					</div>
+					</a>
+				</li>
+				
+			</ul>
+
+		</div>
+	</body>
+	<script src="../lib/yzxRem.js"></script>
+	
+</html>
