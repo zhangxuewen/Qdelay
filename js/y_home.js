@@ -91,3 +91,41 @@ $('.backback').click(function(){
 		"bottom": ".5rem"
 	}, 100);
 })
+
+$('.y_r_1').click(function(){
+	location.href="../tt_view/index1wenzhang.html";
+})
+$('.y_r_2').click(function(){
+	location.href="../tt_view/index2sheji.html";
+})
+$('.y_r_3').click(function(){
+	location.href="../tt_view/index3Top.html";
+})
+$('.y_r_4').click(function(){
+	location.href="../tt_view/index4fashion.html";
+})
+$('.y_r_5').click(function(){
+	location.href="../tt_view/index5 10tu.html";
+})
+$('.y_r_6').click(function(){
+	location.href="../tt_view/index6amusemen.html";
+})
+$('.y_r_7').click(function(){
+	location.href="../tt_view/index7toutiao.html";
+})
+$('.y_r_8').click(function(){
+	location.href="../tt_view/index8city.html";
+})
+$('.y_r_9').click(function(){
+	location.href="../tt_view/index9business.html";
+})
+$('.y_r_10').click(function(){
+	location.href="../tt_view/index10game.html";
+})
+$('.y_r_11').click(function(){
+	location.href="../tt_view/index11zhineng.html";
+})
+$('.y_lanmu').click(function(){
+	location.href="../tt_view/index12myAttention.html";
+	
+})
