@@ -64,3 +64,10 @@ mui.init({
 		}
 	}]
 });
+
+$('.y_userCount').click(function(){
+	location.href="../yq_xinxi/myCenter.html";
+})
+$('.y_message').click(function(){
+	location.href="../yq_xinxi/myInfo.html"
+})
