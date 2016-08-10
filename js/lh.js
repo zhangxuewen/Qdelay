@@ -3,7 +3,8 @@
  */
 $(document).ready(function () {
     $(".enter-btn").on("click",function (e) {
-        $(".loading").fadeOut(600);
+//      $(".loading").fadeOut(600);
+		location.href="html/home.html"
     })
     var loadSwiper=new Swiper("#load-page",{
         pagination : '.swiper-pagination',
