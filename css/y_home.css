@@ -42,15 +42,15 @@ body{
 
 
 .y_blackView{
-	/*position: fixed;*/
+	position: static;
 	z-index: 99;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	background: rgba(0,0,0,0.9);
-	/*display: none;*/
 	color: white;
+	display: none;
 }
 .y_blackView_top{
 	width: 76%;
@@ -95,8 +95,21 @@ body{
 	width: .7rem;
 	height: .7rem;
 	margin: 0 auto;
-	background: gray;
+	background: url(../img/y_mian_left_img_03.png);
+	background-size: .7rem .7rem;
 }
+
+.y_blackView_top li:nth-child(2) .y_blackView_top_btn_img{
+	background-image: url(../img/y_mian_left_img_05.png);
+}
+.y_blackView_top li:nth-child(3) .y_blackView_top_btn_img{
+	background-image: url(../img/y_mian_left_img_07.png);
+}
+.y_blackView_top li:nth-child(4) .y_blackView_top_btn_img{
+	background-image: url(../img/y_mian_left_img_09.png);
+}
+
+
 .y_blackView_bottom{
 	transition: all .3s;
 	-webkit-transition: all .3s;
