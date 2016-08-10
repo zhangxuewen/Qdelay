@@ -1,0 +1,196 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+}
+#myCenter #header{
+	width: 6.4rem;
+	height: 1.3rem;
+	display: flex;
+	font-size: .3rem;
+	padding: 0 .4rem;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	background-color: black;
+	
+}
+
+#myCenter #sec{
+	
+	background-color: #F2F2F2;
+	
+}
+#myCenter #sec>div:nth-child(1){
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+#myCenter #sec>div{
+		background-color: ;
+		width: 7.2rem;
+
+
+		overflow: hidden;
+}
+#myCenter #sec>div:nth-child(1){
+			height: 4.4rem;
+}
+#myCenter #sec>div>img{
+	width: 7.2rem;
+	height: 4.4rem;
+	-webkit-filter:blur(10px) brightness(.5);
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#myCenter #sec .hd{
+	width: 7.2rem;
+	height: 4.4rem;
+	position: relative;
+	z-index:10;
+
+	margin: 0;
+}
+#myCenter #sec .hd>div{
+	z-index: 2;
+	margin: 0rem auto 0;
+	width: 6rem;
+	height: 4rem;
+}
+#myCenter #sec .hd>.leiImg{
+	margin: 0;
+	width: .8rem;
+	height: .8rem;
+	border-radius: .4rem;
+	position: absolute;
+	left:3.6rem;
+	top:2rem ;
+	z-index: 2;
+	transform: translate(-.4rem ,-.4rem);
+	overflow: hidden;
+}
+#myCenter #sec .hd>.leiImg>img{
+	float: left;
+	width: 100%;
+	height: 100%;
+	
+}
+#myCenter #sec .sec-p{
+	width: 7.2rem;
+	height: 1.8rem;
+	margin-bottom: .1rem;
+	background-color: white;
+}
+#myCenter #sec .sec-main{
+	
+}
+#myCenter #sec .sec-main  .sec-main-hd{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+#myCenter #sec .sec-main  .sec-main-hd .btn{
+	font-size: .28rem;
+	width: 3rem;
+	height: .72rem;
+	border-bottom: .08rem solid white;
+	line-height: .72rem;
+	text-align: center;
+	color: #999;
+	font-weight: bold;
+	transition: border-color 1s; 
+}
+#myCenter #sec .sec-main .sec-main-sec{
+	width: 7.2rem;
+	height: 12rem;
+	position: relative;
+}
+
+#myCenter #sec .box1{
+	width: 14.4rem;
+
+	display: flex;
+	font-size: .28rem;
+	color: #ccc;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: left 1s;
+}
+#myCenter #sec .box1>div{
+	width: 50%;
+	height: 12rem;
+		
+}
+/*#myCenter #sec .box1>div:nth-child(1){
+	background-color: #007AFF;
+}
+#myCenter #sec .box1>div:nth-child(2){
+	background-color: #ff7000;
+}
+#myCenter #sec .box1>div:nth-child(3){
+	background-color: #00ff00;
+}*/
+#myCenter #sec .box1>div>div{
+	height: 1.3rem;
+	display: flex;
+	padding: 0 .4rem;
+	background-color: white;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+}
+#myCenter #sec .box1>div>div span{
+	color: #000000;
+	font-weight: bold;
+}
+#myCenter #sec .box1>div>div div:nth-child(1){
+	display: flex;
+	align-items: center;
+}
+#myCenter #sec .box1>div>div div:nth-child(1) span:nth-child(1){
+	display: block;
+	width: .66rem;
+	height: .66rem;
+	background-color: #F6C918;
+	border-radius: .33rem;
+	margin-right: .2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#myCenter #sec .box1>div>div div:nth-child(1) span:nth-child(1) img{
+	width: .43rem;
+	
+	
+}
+#myCenter #sec .box1>div>.sec-main{
+	padding: 0;
+	width: 3rem;
+	height: 3rem;
+	background-color: #D0D0D0;
+	border-radius: 1.5rem;
+	margin: 2rem auto 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+#myCenter #sec .box1>div>.sec-main img{ 
+	width: 1.42rem;
+	height: 2.1rem;
+}
+#myCenter #sec .box1>div>p{
+	padding: 0;
+	font-size: .28rem;
+	margin: .5rem auto 0;	
+	text-align: center;
+} 
