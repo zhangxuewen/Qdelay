@@ -95,11 +95,13 @@
 		<script>
 			var a=1;
 			$('.mui-scroll').scroll(function(){
+				//隐藏
 				parent.a();
 				a=2;
 			})
 			var time=setInterval(function(){
 				if (a==1) {
+					//弹出
 					parent.b();
 				}
 				a=1;
