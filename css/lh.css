@@ -126,8 +126,8 @@ li{list-style: none;}
 }
 .curiosity{
 	position: absolute;
-	top: -1rem;
-	left: 2.8rem;
+	transform: translate3D(-4rem,0,0);
+	top: 1.4rem;
 	font-size: 0.3rem;
 	color: #fbf6f0;
 	font-weight: bold;
@@ -183,8 +183,9 @@ li{list-style: none;}
 
 .design{
 	position: absolute;
-	top: -1rem;
-	right: .7rem;
+	top: 4rem;
+	transform: translate3D(-4rem,0,0);
+	/*right: .7rem;*/
 	font-size: 0.3rem;
 	color: #fbf6f0;
 	font-weight: bold;
@@ -194,11 +195,11 @@ li{list-style: none;}
 	-o-transition: all .5s;
 	-ms-transition: all .5s;
 
-	/* transition-delay: .2s;
-	-webkit-transition-delay: .2s;
-	-moz-transition-delay: .2s;
-	-o-transition-delay: .2s;
-	-ms-transition-delay: .2s; */
+	/*transition-delay: .2s;*/
+	/*-webkit-transition-delay: .2s;*/
+	/*-moz-transition-delay: .2s;*/
+	/*-o-transition-delay: .2s;*/
+	/*-ms-transition-delay: .2s;*/
 }
 .design>img{
 	vertical-align: middle;
@@ -211,8 +212,8 @@ li{list-style: none;}
 }
 .film{
 	position: absolute;
-	top: -1rem;
-	left: 0.8rem;
+	transform: translate3D(-4rem,0,0);
+	top: 3.3rem;
 	font-size: 0.3rem;
 	color: #fbf6f0;
 	font-weight: bold;
@@ -222,11 +223,6 @@ li{list-style: none;}
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
 	-ms-transition: all .5s;
-	/* transition-delay: .4s;
-	-webkit-transition-delay: .4s;
-	-moz-transition-delay: .4s;
-	-o-transition-delay: .4s;
-	-ms-transition-delay: .4s; */
 }
 .film>img{
 	vertical-align: middle;
@@ -240,8 +236,8 @@ li{list-style: none;}
 }
 .fashion{
 	position: absolute;
-	top: -1rem;
-	left: 2.2rem;
+	transform: translate3D(-4rem,0,0);
+	top: 5.4rem;
 	font-size: 0.3rem;
 	color: #fbf6f0;
 	font-weight: bold;
@@ -264,15 +260,15 @@ li{list-style: none;}
 }
 .ribao1,.ribao2{
 	position: absolute;
-	left: -4rem;
+	/*left: -4rem;*/
 	font-size: 0.27rem;
 	font-weight: bold;
 	color: #fbf6f0;
-	-webkit-transform: translate3D(0,0,0);
-	-moz-transform: translate3D(0,0,0);
-	-ms-transform: translate3D(0,0,0);
-	-o-transform: translate3D(0,0,0);
-	transform: translate3D(0,0,0);
+	-webkit-transform: translate3D(-4rem,0,0);
+	-moz-transform: translate3D(-4rem,0,0);
+	-ms-transform: translate3D(-4rem,0,0);
+	-o-transform: translate3D(-4rem,0,0);
+	transform: translate3D(-4rem,0,0);
 	transition: all .6s;
 	-webkit-transition: all .6s;
 	-moz-transition: all .6s;
